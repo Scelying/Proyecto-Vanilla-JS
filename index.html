@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <script src="main.js"></script>
+    <title>Sitio Personal</title>
+</head>
+
+<body>
+
+    <div id="title">
+        <h1>Sitio Web Personal con Vanilla JS</h1>
+        <p>Bienvenido al sitio web personal elaborado para el diplomado en Desarrollo Web Full Stack de la Universidad
+            de Cataluña<br>«Módulo 1, 2 y 3»</p>
+    </div>
+
+    <div class="container">
+        <aside>
+            <nav>
+                <p>Proyectos</p>
+                <ul>
+                    <li onclick="saludar()"><a href="#">To Do List Aplication</a></li>
+                    <li><a href="#">Listado de Contactos</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <section>
+            <div>
+                <button onclick="crearTarea()">Crear tarea</button>
+                <button onclick="eliminarTarea()">Eliminar tarea</button>
+            </div>
+
+            <h1>Lista de tareas</h1>
+
+            <ul id="list">
+                <input type="checkbox"><label>Primera tarea</label><br></ul>
+
+        </section>
+    </div>
+
+    <footer>
+        <p>Elaborado por Sebastian Cely<br> Diplomado Desarrollo Full Stack<br> Universidad
+            de Cataluña <br>2022</p>
+    </footer>
+
+</body>
+
+</html>

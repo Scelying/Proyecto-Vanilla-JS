@@ -1,0 +1,89 @@
+#title {
+    vertical-align: middle;
+    padding: 1%;
+    background-color: #00ADB5;
+    color: white;
+    text-align: center
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: azure;
+}
+
+h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 150%;
+    line-height: 25px;
+}
+
+p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 100%;
+    line-height: 25px;
+}
+
+.container {
+    display: flex;
+
+}
+
+aside {
+    display: flex;
+    background-color: lightcyan;
+    padding: 15px;
+
+}
+
+section {
+    display: flexbox;
+    padding: 15px;
+    align-items: center;
+    width: 75%;
+}
+
+section div{
+    display: flex;
+    vertical-align: middle;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+button {
+    display: flexbox;
+    margin: 10px;
+    cursor: pointer;
+    height: 25px;
+    width: 100px;
+}
+
+
+a {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 80%;
+}
+
+a:hover {
+    color: blue;
+
+}
+
+
+footer {
+    bottom: 0px;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    vertical-align: bottom;
+    padding: 5px;
+    background-color: #393E46;
+    color: white;
+    text-align: center;
+    line-height: 25px;
+}
+
+footer p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: small;
+}
