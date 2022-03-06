@@ -3,5 +3,5 @@ Proyecto inicial con Vanilla JS para Diplomado en Desarrollo Web Full Stack de l
 
 EL proyecto contiente:
 
-• Práctica 1: Web personal. 
+• Práctica 1: Web personal. <br>
 • Práctica 2: Todo List Aplication.
