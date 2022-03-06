@@ -69,6 +69,10 @@ a:hover {
 
 }
 
+label:hover {
+    cursor: pointer;
+    color:red;
+}
 
 footer {
     bottom: 0px;

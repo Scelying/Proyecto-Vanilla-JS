@@ -32,13 +32,14 @@
         <section>
             <div>
                 <button onclick="crearTarea()">Crear tarea</button>
-                <button onclick="eliminarTarea()">Eliminar tarea</button>
+                <!-- <button onclick="eliminarTarea()">Eliminar tarea</button> -->
             </div>
 
             <h1>Lista de tareas</h1>
+            <p>Seleccione el nombre de la tarea para eliminarla. </p>
 
             <ul id="list">
-                <input type="checkbox"><label>Primera tarea</label><br></ul>
+                <input type="checkbox"><label onclick="clickEliminar(this)">Primera tarea</label><br></ul>
 
         </section>
     </div>

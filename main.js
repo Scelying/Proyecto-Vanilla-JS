@@ -6,6 +6,7 @@ listarTarea = (nombre) => {
     let br = document.createElement("br");
     li.setAttribute("type", "checkbox");
     let label = document.createElement('label');
+    label.setAttribute("onClick", "clickEliminar(this)")
     label.appendChild(document.createTextNode(nombre));
     ul.appendChild(li);
     ul.appendChild(label);
@@ -14,19 +15,22 @@ listarTarea = (nombre) => {
 
 crearTarea = () => {
     let nombreTarea = prompt("ingrese la tarea a listar");
-    listarTarea(nombreTarea);
+    if (nombreTarea != "") {
+        listarTarea(nombreTarea);
+    } else {
+        alert("No ingreso un nombre para la tarea, inténtelo nuevamente")
+    }
 }
 
-eliminarTarea = () => {
+eliminarTarea = (etiqueta) => {
     let ul = document.getElementById("list");
-    let br = ul.lastChild;
-    console.log(br);
-    ul.removeChild(br);
-    let label = ul.lastChild;
-    console.log(label);
-    ul.removeChild(label);
-    let chbox = ul.lastChild;
-    console.log(chbox);
-    ul.removeChild(chbox);
-    
+    ul.removeChild(etiqueta.previousSibling);
+    ul.removeChild(etiqueta.nextSibling);
+    ul.removeChild(etiqueta);
+}
+
+clickEliminar = (etiqueta) => {
+    if (confirm("¿Está seguro que desea eliminar la tarea?")) {
+        eliminarTarea(etiqueta);
+    }
 }
